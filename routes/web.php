@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Models\News;
@@ -26,12 +26,6 @@ require __DIR__.'/auth.php';
 //     $newsItem = News::findOrFail($id);
 //     return view('news.detail', ['news' => $newsItem]);
 // })->name('news.detail');
-Route::get('/news', function () {
-    $newsList = News::all();
-    return view('news', compact('newsList'));
-})->name('news');
 
-Route::get('/news/{id}', function ($id) {
-    $newsItem = News::findOrFail($id);
-    return view('news_detail', compact('newsItem'));
-})->name('news.detail');
+Route::get('/news', [NewsController::class, 'index'])->name('news');
+Route::get('/news/{id}', [NewsController::class, 'show'])->name('news.detail');

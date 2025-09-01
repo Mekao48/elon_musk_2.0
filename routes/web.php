@@ -17,12 +17,21 @@ Route::middleware(['auth', 'verified'])->group(function () {
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
 
+// Route::get('/news', function () {
+//     $allNews = News::all();
+//     return view('news.index', ['newsList' => $allNews]);
+// })->name('news');
+
+// Route::get('/news/{id}', function ($id) {
+//     $newsItem = News::findOrFail($id);
+//     return view('news.detail', ['news' => $newsItem]);
+// })->name('news.detail');
 Route::get('/news', function () {
-    $allNews = News::all();
-    return view('news.index', ['newsList' => $allNews]);
+    $newsList = News::all();
+    return view('news', compact('newsList'));
 })->name('news');
 
 Route::get('/news/{id}', function ($id) {
     $newsItem = News::findOrFail($id);
-    return view('news.detail', ['news' => $newsItem]);
+    return view('news_detail', compact('newsItem'));
 })->name('news.detail');

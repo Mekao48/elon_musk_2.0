@@ -15,3 +15,13 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
+Route::get('/news', function () {
+    return view('news');
+})->name('news');
+
+Route::get('/news/{id}', function ($id) {
+    // Query from the database
+
+    // return view  with data
+
+})->name('news.detail');

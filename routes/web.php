@@ -30,12 +30,17 @@ require __DIR__.'/auth.php';
 // Route::get('/news', [NewsController::class, 'index'])->name('news');
 // Route::get('/news/{id}', [NewsController::class, 'show'])->name('news.detail');
 
-Route::get('/news', function () {
-    $allNews = News::all();
-    return view('news', ['newsList' => $allNews]);
-})->name('news');
+// Route::get('/news', function () {
+//     $allNews = News::all();
+//     return view('news', ['newsList' => $allNews]);
+// })->name('news');
 
-Route::get('/news/{id}', function ($id) {
-    $newsItem = News::findOrFail($id);
-    return view('news_detail', ['news' => $newsItem]);
-})->name('news_detail');
+// Route::get('/news/{id}', function ($id) {
+//     $newsItem = News::findOrFail($id);
+//     return view('news_detail', ['news' => $newsItem]);
+// })->name('news_detail');
+
+Route::controller(NewsController::class)->group(function () {
+    Route::get('/news', 'index')->name('news');
+    Route::get('/news/{id}', 'show')->name('news_detail');
+});

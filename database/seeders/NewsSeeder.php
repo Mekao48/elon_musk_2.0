@@ -58,7 +58,7 @@ class NewsSeeder extends Seeder
             // ตัวอย่างข่าวที่ 6 - 10 (ใช้เนื้อหาจริงจากแหล่งข่าว)
             [
                 'title' => 'SpaceX ปล่อยโดรนอวกาศลับ X-37B ของกองทัพสหรัฐฯ',
-                'image' => 'https://c.ndtvimg.com/2023-05/5u6t8v4o_spacex-falcon-heavy-launch_625x300_11_May_23.jpg',
+                'image' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-cZexbbzCkxrHMMM0pz0IOu6vHezO3_n8sQ&s',
                 'content' => 'จรวด Falcon Heavy ของ SpaceX ประสบความสำเร็จในการปล่อยโดรนอวกาศ X-37B ที่เป็นความลับสุดยอดของกองทัพสหรัฐฯ ขึ้นสู่วงโคจร ซึ่งเป็นภารกิจที่มีความสำคัญทางยุทธศาสตร์',
                 'source_url' => 'https://www.ndtv.com/topic/elon-musk',
                 'created_at' => now(),
@@ -66,7 +66,7 @@ class NewsSeeder extends Seeder
             ],
             [
                 'title' => 'ศาลสั่ง Musk ต้องเผชิญคดีฟ้องร้องว่าจัดลอตเตอรี่เลือกตั้งที่ผิดกฎหมาย',
-                'image' => 'https://c.ndtvimg.com/2023-11/r8u6v4o_elon-musk-reuters_625x300_29_Nov_23.jpg',
+                'image' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0m0nz3m1fkIAzLqizSnSFGOZGUNE3Cbl0UQ&s',
                 'content' => 'ศาลได้ตัดสินว่า Elon Musk ต้องเผชิญกับการฟ้องร้องที่กล่าวหาว่าเขาจัดการลอตเตอรี่มูลค่า 1 ล้านดอลลาร์ที่ผิดกฎหมายเพื่อส่งเสริมการลงคะแนนเสียงในการเลือกตั้ง',
                 'source_url' => 'https://www.ndtv.com/topic/elon-musk',
                 'created_at' => now(),
@@ -74,7 +74,7 @@ class NewsSeeder extends Seeder
             ],
             [
                 'title' => 'Grok ของ xAI บุกตลาดพนัน จับมือแพลตฟอร์มถูกกฎหมายในสหรัฐฯ',
-                'image' => 'https://siamblockchain.com/wp-content/uploads/2023/11/elon-musk-xai-grok-kalshi-1024x576.jpg',
+                'image' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS592OSnc8SGOB5SqRUM1kQhgun341qqeIgAQ&s',
                 'content' => 'xAI ของ Elon Musk ประกาศความร่วมมือกับ Kalshi ซึ่งเป็นแพลตฟอร์มการพนันที่ถูกกฎหมายเพียงแห่งเดียวในสหรัฐฯ เพื่อนำ Grok เข้าสู่ตลาดการคาดการณ์ผลลัพธ์ต่างๆ',
                 'source_url' => 'https://siamblockchain.com/tag/elon-musk/',
                 'created_at' => now(),
@@ -82,7 +82,7 @@ class NewsSeeder extends Seeder
             ],
             [
                 'title' => 'ทรัมป์ย้ำไม่ตัดเงินสนับสนุนธุรกิจของ Musk',
-                'image' => 'https://siamblockchain.com/wp-content/uploads/2023/12/donald-trump-elon-musk-1024x576.jpg',
+                'image' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNgDFRSvQcaEPgKaaj6tAB8eNqNppkrewFmw&s',
                 'content' => 'โดนัลด์ ทรัมป์ ยืนยันว่าเขาจะไม่ตัดการสนับสนุนทางการเงินแก่บริษัทต่างๆ ของ Elon Musk เช่น SpaceX และ Tesla โดยย้ำว่าต้องการให้ธุรกิจเหล่านี้เติบโตในสหรัฐอเมริกา',
                 'source_url' => 'https://siamblockchain.com/tag/elon-musk/',
                 'created_at' => now(),
@@ -90,7 +90,7 @@ class NewsSeeder extends Seeder
             ],
             [
                 'title' => 'Musk ยืนยันวิกฤตหนี้สหรัฐฯ อาจดันราคา Bitcoin พุ่ง',
-                'image' => 'https://siamblockchain.com/wp-content/uploads/2023/12/elon-musk-bitcoin-1024x576.jpg',
+                'image' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV_VKIOwYIlPUBC1le62na3OQk0gu4ePKuEQ&s',
                 'content' => 'Elon Musk ได้แสดงความคิดเห็นยืนยันข่าวลือที่ว่า วิกฤตหนี้สาธารณะของสหรัฐฯ ที่มีมูลค่ามหาศาลอาจเป็นปัจจัยสำคัญที่ผลักดันให้ราคาของ Bitcoin เพิ่มสูงขึ้นอย่างมีนัยสำคัญ',
                 'source_url' => 'https://siamblockchain.com/tag/elon-musk/',
                 'created_at' => now(),
